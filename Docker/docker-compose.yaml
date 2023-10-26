@@ -1,0 +1,13 @@
+version: '3.9'
+networks:
+    test:
+services:
+  Backend:
+    container_name: express_bkend
+    image: expressimg:1
+    tty: true
+    
+    working_dir: /app
+    ports:
+      - 7050:7050
+  
