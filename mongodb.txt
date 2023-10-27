@@ -1,17 +1,3 @@
 docker run -d -p 27017:27017 --name=mongo-example mongo:latest
 docker exec -it mongo-example mongosh
-show dbs
-
-use kba
-
-
-db.users.insert   -> press tab
-
-db.users.insertOne({"name":"soya"})
-docker stop mongo-example
-docker rm mongo-example
-
-npx @aka-demy/create-express-app
-
-sudo dpkg -i mongodb-compass_1.40.3_amd64.deb
 

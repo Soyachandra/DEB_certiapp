@@ -4,7 +4,7 @@ const router = Router();
 import Certificates from "../Models/certificates.js";//import certificates from Models
 /* GET home page. */
 router.get("/", function (req, res) {
-  res.send("Hello World!");
+ // res.send("Hello World!");
 });
 router.post("/", async function (req, res) {
   try {

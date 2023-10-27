@@ -5,7 +5,8 @@ import mongoose from "mongoose";
 import indexRouter from "./routes/index.js";
 import usersRouter from "./routes/users.js";
 mongoose.connect(
-    "mongodb://localhost:27017/kba",
+    "mongodb://mongodb:27017/CertiDapp?authSource=admin",
+    
 );
 const database = mongoose.connection;
 database.on("error", (error) => {
