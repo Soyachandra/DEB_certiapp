@@ -17,7 +17,7 @@ services:
 
     tty: true
     ports:
-      - 7050:8090
+      - 8090:8090
   mongodb:
     image: mongo:latest
     container_name: mongodb
